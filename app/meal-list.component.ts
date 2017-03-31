@@ -10,13 +10,13 @@ import { Meal } from './meal.model';
       <h4>Details: {{currentMeal.details}}</h4>
       <h4>Calories: {{currentMeal.calories}}</h4>
       <button type="button" class="btn btn-primary" (click)="toggleEditing(currentMeal)">Edit Meal</button>
-    </div>
-    <div *ngIf="currentMeal.isBeingEdited">
-        <div class="panel-body">
-          <edit-meal [currentMeal]="currentMeal" (clickSender)="sendDeleteMessage($event)">Loading</edit-meal>
-          <button type="button" class="btn btn-primary" (click)="toggleEditing(currentMeal)">Finish Editing</button>
-        </div>
+      <div *ngIf="currentMeal.isBeingEdited">
+      <div class="panel-body">
+      <edit-meal [currentMeal]="currentMeal" (clickSender)="sendDeleteMessage($event)">Loading</edit-meal>
+      <button type="button" class="btn btn-primary" (click)="toggleEditing(currentMeal)">Finish Editing</button>
       </div>
+      </div>
+    </div>
   </div>
 
   `

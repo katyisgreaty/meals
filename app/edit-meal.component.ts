@@ -4,7 +4,7 @@ import { Meal } from './meal.model';
 @Component({
   selector: 'edit-meal',
   template: `
-  <div class="form-group col-md-4">
+  <div class="form-group">
       <label>Name of Meal</label>
       <input [value]="currentMeal.name" (input)="currentMeal.name = $event.target.value" class="form-control" type="text">
       <label>Details</label>
