@@ -6,7 +6,7 @@ import { Meal } from './meal.model';
   template: `
   <div id="high">
     <div class="meals" *ngFor="let currentMeal of listOfMeals | listingHigh">
-      <div class="col-md-3 box">
+      <div class="col-md-4 box high-meals">
         <h3>{{currentMeal.name}}</h3>
         <h4>Details: {{currentMeal.details}}</h4>
         <h4>Calories: {{currentMeal.calories}}</h4>

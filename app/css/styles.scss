@@ -32,9 +32,24 @@ body {
 }
 
 #low {
+  background-image: url("../../resources/images/umbrellas.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
 
+.low-meals {
+  color: white;
+  text-shadow:
+  #000 0px 0px 1px,
+  #000 0px 0px 1px,
+  #000 0px 0px 1px,
+  #000 0px 0px 1px,
+  #000 0px 0px 1px,
+  #000 0px 0px 1px;
 }
 
 #high {
-
+  background-image: url("../../resources/images/balloon2.jpeg");
+  background-size: cover;
+  background-position: center;
 }
