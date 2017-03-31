@@ -78,15 +78,15 @@ h3 {
 }
 
 #all {
-  background-image: url("../../resources/images/pinaepple.jpeg");
-  background-size: cover;
-  background-position: bottom;
-}
-
-#low {
   background-image: url("../../resources/images/garden1.jpeg");
   background-size: cover;
   background-position: top;
+}
+
+#low {
+  background-image: url("../../resources/images/pinaepple.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 #high {
