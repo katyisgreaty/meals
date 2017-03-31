@@ -1,4 +1,6 @@
 export class Meal {
+  
+  public isBeingEdited: boolean = false;
 
   constructor(public name: string, public details: string, public calories: number) { };
 

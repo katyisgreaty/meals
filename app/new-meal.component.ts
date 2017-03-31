@@ -6,7 +6,7 @@ import { Meal } from './meal.model';
   template: `
     <h2>Add New Meal:</h2>
     <div class="form-group col-md-7">
-      <form>
+      <form name="new-meal">
         <label for="name">Name of meal</label>
         <input type="text" name="name" (input)="newMealName = $event.target.value" class="form-control">
         <label name="details">Details of meal</label>

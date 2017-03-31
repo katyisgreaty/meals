@@ -6,7 +6,9 @@ import { Meal } from './meal.model';
   template: `
   <h1>Meal Tracking</h1>
   <div class="container">
-    <meal-list>Loading...</meal-list>
+    <div class="row">
+      <meal-list>Loading...</meal-list>
+    </div>
     <new-meal (newClickSender)="addMeal($event)">Form coming soon</new-meal>
   </div>
   `
