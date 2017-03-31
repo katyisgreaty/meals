@@ -7,22 +7,73 @@
 body {
   // background-color: #383F54;
   padding: 15px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.button-spacer {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
 }
 
 .meals {
   color: white;
+  text-shadow:
+  #000 0px 0px 1px,
+  #000 0px 0px 1px,
+  #000 0px 0px 1px,
+  #000 0px 0px 1px,
+  #000 0px 0px 1px,
+  #000 0px 0px 1px;
+  // margin: 10px;
+  padding-top: 0px;
+}
+
+.list-space {
 }
 
 #jumbo {
+  background-color: white;
   background-image: url("../../resources/images/food1.jpeg");
-  background-position: center;
-  background-size: cover;
+  background-position: left;
+  background-size: 85%;
+  background-repeat: no-repeat;
   color: white;
   text-align: center;
-  height: 400px;
+  height: 500px;
   margin-top: 0px;
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 40px;
+}
+
+#chalk {
+  float: right;
+  height: 360px;
+  width: 520px;
+  padding-top: 75px;
+  padding-left: 5px;
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 54px;
+  text-align: center;
+  background-image: url("../../resources/images/chalkframe.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+h3 {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.btn {
+  background-color: #f3be2a;
+}
+
+.btn-primary {
+  background-color: #142643;
 }
 
 #all {
@@ -32,20 +83,9 @@ body {
 }
 
 #low {
-  background-image: url("../../resources/images/umbrellas.jpg");
+  background-image: url("../../resources/images/garden1.jpeg");
   background-size: cover;
-  background-position: bottom;
-}
-
-.low-meals {
-  color: white;
-  text-shadow:
-  #000 0px 0px 1px,
-  #000 0px 0px 1px,
-  #000 0px 0px 1px,
-  #000 0px 0px 1px,
-  #000 0px 0px 1px,
-  #000 0px 0px 1px;
+  background-position: top;
 }
 
 #high {
@@ -53,3 +93,33 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.thumb {
+  height: 40px;
+}
+
+.new-meal-form {
+  padding-left: 42%;
+  padding-top: 7%;
+  background-color: green;
+  margin-top: 15px;
+  background-image: url("../../resources/images/wall.jpeg");
+  background-size: cover;
+  background-position: top;
+  height: 500px;
+}
+
+.btn-custom {
+  background-color: #5ac4cc;
+  margin-top: 15px;
+}
+
+font-family: 'Amatic SC', cursive;
+font-family: 'Cookie', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Homemade Apple', cursive;
+font-family: 'Sue Ellen Francisco', cursive;
+font-family: 'Pavanam', sans-serif;
+font-family: 'News Cycle', sans-serif;
+font-family: 'Actor', sans-serif;
+font-family: 'Oxygen', sans-serif;

@@ -11,7 +11,7 @@ import { Meal } from './meal.model';
       <input [value]="currentMeal.details" (input)="currentMeal.details = $event.target.value" class="form-control" type="text">
       <label>Calories</label>
       <input [value]="currentMeal.calories" (input)="currentMeal.calories = $event.target.value" class="form-control" type="number">
-    <button type="button" class="btn btn-danger" (click)="deleteButtonClicked(currentMeal)">Delete This Meal</button>
+    <!-- <button type="button" class="btn btn-danger" (click)="deleteButtonClicked(currentMeal)">Delete This Meal</button> -->
   </div>
   `
 })

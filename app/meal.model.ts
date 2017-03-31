@@ -1,8 +1,14 @@
 export class Meal {
-
+  public isFocusFood: boolean = false;
   public isBeingEdited: boolean = false;
+  public mealId: number;
 
-  constructor(public name: string, public details: string, public calories: number) { };
+  constructor(public name: string, public details: string, public calories: number) {
+    this.mealId = Meal.idCounter;
+    Meal.idCounter++;
+  };
+
+  static idCounter: number = 0;
 
   static listOfMeals: Meal[] = [
     new Meal('Turkey Sandwich', 'Turkey, wheat bread, mayo tomato and lettuce', 400),
