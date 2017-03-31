@@ -2,9 +2,9 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Meal } from './meal.model';
 
 @Component({
-  selector: 'meal-list',
+  selector: 'low-meal-list',
   template: `
-  <div class="meals" *ngFor="let currentMeal of listOfMeals">
+  <div class="meals" *ngFor="let currentMeal of listOfMeals | listingLow">
     <div class="col-md-3 box">
       <h3>{{currentMeal.name}}</h3>
       <h4>Details: {{currentMeal.details}}</h4>
@@ -21,7 +21,7 @@ import { Meal } from './meal.model';
   `
 })
 
-export class MealListComponent {
+export class LowMealListComponent {
   @Output() deleteSender = new EventEmitter();
 
   listOfMeals: Meal[] = Meal.listOfMeals;

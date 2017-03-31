@@ -5,16 +5,50 @@ import { Meal } from './meal.model';
   selector: 'app-root',
   template: `
   <h1>Meal Tracking</h1>
-  <div class="container">
-    <div class="row">
-      <meal-list>Loading...</meal-list>
+  <button *ngIf="listAll == false" type="button" (click)="engageListAll()" class="btn button-spacer">List All Meals</button>
+    <button *ngIf="listLow == false" type="button" (click)="engageListLow()" class="btn button-spacer">List Meals with less than 500 calories</button>
+    <button *ngIf="listHigh == false" type="button" (click)="engageListHigh()" class="btn button-spacer">List Meals with more than 500 calories</button>
+    <div *ngIf="listAll == true" class="container">
+      <div class="row">
+        <meal-list>Loading...</meal-list>
+      </div>
+    </div>
+    <div *ngIf="listLow == true" class="container">
+      <div class="row">
+        <low-meal-list>Loading...</low-meal-list>
+      </div>
+    </div>
+    <div *ngIf="listHigh == true" class="container">
+      <div class="row">
+        <high-meal-list>Loading...</high-meal-list>
+      </div>
     </div>
     <new-meal (newClickSender)="addMeal($event)">Form coming soon</new-meal>
-  </div>
   `
 })
 
 export class AppComponent {
+  public listAll: boolean = true;
+  public listLow: boolean = false;
+  public listHigh: boolean = false;
+
+  engageListAll() {
+    this.listAll = true;
+    this.listLow = false;
+    this.listHigh = false;
+  }
+
+  engageListLow() {
+    this.listLow = true;
+    this.listAll = false;
+    this.listHigh = false;
+  }
+
+  engageListHigh() {
+    this.listHigh = true;
+    this.listLow = false;
+    this.listAll = false;
+  }
 
   addMeal(newMeal: Meal) {
     Meal.listOfMeals.push(newMeal);
