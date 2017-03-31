@@ -1,5 +1,40 @@
 .box {
-  border: solid 2px green;
-  min-height: 200px;
-  margin: 20px;
+  border: solid 6px white;
+  min-height: 350px;
+  padding: 20px;
+}
+
+body {
+  // background-color: #383F54;
+  padding: 15px;
+}
+
+.meals {
+  color: white;
+}
+
+#jumbo {
+  background-image: url("../../resources/images/food1.jpeg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  height: 400px;
+  margin-top: 0px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#all {
+  background-image: url("../../resources/images/pinaepple.jpeg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+#low {
+
+}
+
+#high {
+
 }
